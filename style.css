@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.address{
+    text-align: center;
+    font-weight: bold;
+}
+.bar{
+    border-bottom: 1px solid rgba(211, 211, 211, 0.63);
+    margin: 10px;
+}
+.bar2{
+    border-top: 1px solid rgba(211, 211, 211, 0.63);
+    margin:10px
+}
+.btn{
+    width: fit-content !important;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 7px;
+}
+body{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(131,58,180);
+background: linear-gradient(5deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.container{
+    height: 100vh;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.575) ;
+}
+.calculator input{
+    width:75%;
+    border: 1px solid lightgray;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-top-left-radius: 0;
+    margin-left: 0px;
+    border-bottom-left-radius: 0;
+}
+.calculator button{
+    width: 15%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    outline: none;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.calculator button:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+#quality{
+    width:90%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#tip-amount{
+    visibility: hidden;
+    min-width: 25%;
+    margin:auto;
+    background-color: rgba(0, 0, 255, 0.699);
+    color:white;
+    bottom: 30px;
+    position: fixed;
+    padding: 16px;
+    text-align: center;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+ .show{
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein{
+    from{
+        bottom: 0;
+        opacity: 0;
+    }
+    to{
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+@keyframes fadeout{
+    from{
+        bottom: 30px;
+        opacity: 1;
+    }
+    to{
+        bottom: 0;
+        opacity: 0;
+    }
+}
+@media(max-width:480px){
+    .container{
+      width:  98%;
+    }
+    .calculator{
+        width:80%
+    }
+    .calculator input{
+        width:65%
+    }
+    .calculator button{
+        width:20%
+    }
+}
+@media(max-width:241px){
+    .container{
+      width:  98%;
+    }
+    .calculator{
+        width:80%
+    }
+    .calculator input{
+        width:55%
+    }
+    .calculator button{
+        text-align: center;
+        width:35%
+    }
+}
